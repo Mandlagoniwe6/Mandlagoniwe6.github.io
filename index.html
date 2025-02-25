@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mandla Goniwe, a Software Developer and Tech Enthusiast">
+    <meta name="keywords" content="Mandla Goniwe, Software Developer, Portfolio, React Native, Firebase">
+    <meta name="author" content="Mandla Goniwe">
+    <title>Mandla Goniwe - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+    <link rel="icon" type="image/x-icon" href="images\favicon-32x32.png">
+    <link rel="preload" href="images\profilePicture.jpeg" as="image">
+</head>
+<body>
+    <div id="progress-bar" class="progress-bar"></div>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="scroll-indicators">
+        <a href="#home" class="scroll-dot" data-section="home"></a>
+        <a href="#about" class="scroll-dot" data-section="about"></a>
+        <a href="#projects" class="scroll-dot" data-section="projects"></a>
+        <a href="#skills" class="scroll-dot" data-section="skills"></a>
+        <a href="#contact" class="scroll-dot" data-section="contact"></a>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Mandla Goniwe</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="theme-toggle" role="button" aria-label="Toggle theme">
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <img src="images\profilePicture.jpeg" alt="Mandla Goniwe Profile" class="profile-img" loading="lazy">
+            <h1>Hello, I'm <span>Mandla Goniwe</span></h1>
+            <p id="typed-text" class="typed-text"></p>
+            <p class="tagline">Crafting innovative solutions with code and creativity</p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-content">
+            <div class="about-columns">
+                <p>Hi there! I'm a passionate developer with experience in building innovative and user-centric applications.I thrive on solving problems with creative solutions. My skills span across mobile app development using frameworks like React Native, along with backend services powered by Firebase. Whether it's designing interactive UIs, implementing seamless navigation, or integrating cloud-based features, I enjoy every step of the process.</p>
+            </div>
+            <div class="about-more" id="about-more">
+                <p>In addition to my technical expertise, I bring strong teamwork, communication, and problem-solving skills, making me an asset in collaborative environments. I believe in continuous learning and innovation, always looking for new challenges that push my creativity and technical abilities.</p>
+                <p>I am a graduate for Bachelor of Commerce in Information Systems at the University of Johannesburg, I am eager to apply my knowledge in real-world projects and contribute meaningfully to the tech industry.</p>
+                <p>Let’s connect and create something amazing together!</p>
+            </div>
+            <button id="see-more-btn" class="see-more-btn">See More</button>
+            <a href="documents\MandlaCV.pdf" download="documents\MandlaCV.pdf" class="download-btn"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2><i class="fas fa-folder-open"></i> Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3><i class="fas fa-gamepad"></i> Stakeholders Quest</h3>
+                    <p>A Python-based game teaching Agile methodologies.</p>
+                    <a href="https://max599.itch.io/agile-stakeholder-challenge" target="_blank" class="project-link">Explore</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3><i class="fas fa-cubes"></i> 3D Data Center Model</h3>
+                    <p>A 3D Unity model simulating a futuristic data center.</p>
+                    <a href="https://max599.itch.io/data-center" target="_blank" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2><i class="fas fa-cogs"></i> Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-item"><span>C#</span><div class="progress-bar" data-progress="90"></div></div>
+                <div class="skill-item"><span>Python</span><div class="progress-bar" data-progress="85"></div></div>
+                <div class="skill-item"><span>JavaScript</span><div class="progress-bar" data-progress="80"></div></div>
+                <div class="skill-item"><span>SQL</span><div class="progress-bar" data-progress="75"></div></div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+                <div class="skill-item"><span>React Native</span><div class="progress-bar" data-progress="85"></div></div>
+                <div class="skill-item"><span>Firebase</span><div class="progress-bar" data-progress="80"></div></div>
+                <div class="skill-item"><span>Power BI</span><div class="progress-bar" data-progress="70"></div></div>
+                <div class="skill-item"><span>Unity</span><div class="progress-bar" data-progress="75"></div></div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                <ul>
+                    <li><i class="fas fa-users-cog"></i> Teamwork</li>
+                    <li><i class="fas fa-comment"></i> Communication</li>
+                    <li><i class="fas fa-lightbulb"></i> Problem-Solving</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-certificate"></i> Certificates</h3>
+                <ul>
+                    <li><i class="fas fa-award"></i> CodSoft Data Science Remote Internship</li>
+                </ul>
+                <ul>
+                    <li><i class="fas fa-award"></i> Prodigy Info Tech Software Development Remote Internship</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2><i class="fas fa-address-book"></i> Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> goniwemandla1@gmail.com</p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 0769743136</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> <a href="https://maps.google.com/?q=Midrand,+Johannesburg" target="_blank">Midrand, Johannesburg</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mandla-goniwe-a3a547325" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/27769743136?text=Hi%20Mandla,%20I’d%20love%20to%20connect%20about%20a%20project!" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                 </div>
+            </div>
+            <form id="contact-form" class="contact-form" aria-label="Contact Form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required aria-label="Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        <p>© <span id="year"></span> Mandla Goniwe. All rights reserved.</p>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("RE4qb57-2FaQEvA2x"); // Replace with your EmailJS User ID
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
